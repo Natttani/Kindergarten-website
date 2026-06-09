@@ -1,0 +1,17 @@
+# robots.txt для МАДОУ д/с №154
+User-agent: *
+Allow: /
+Disallow: /kindergarten.db
+Disallow: /*.db$
+Disallow: /private/
+Disallow: /admin/
+
+# Задержка между запросами для щадящего сканирования
+Crawl-delay: 2
+
+# Главное зеркало сайта (укажите ваш реальный домен)
+Host: http://f1276758.xsph.ru/
+
+# Карта сайта
+Sitemap: http://f1276758.xsph.ru/sitemap.xml
+

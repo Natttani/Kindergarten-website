@@ -43,12 +43,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['send_message'])) {
         $error_message = implode(', ', $errors);
     }
 }
+
+// SEO-данные для страницы
+$page_title = 'МАДОУ детский сад №154 | Официальный сайт в Новосибирске';
+$page_description = 'Официальный сайт МАДОУ детский сад №154 в Новосибирске. Развитие и воспитание детей от 2 до 7 лет. Лицензия, группы, контакты. Запись в детский сад.';
+$page_keywords = 'детский сад Новосибирск, МАДОУ 154, дошкольное образование, запись в детский сад, частный сад, ясли Новосибирск, воспитание детей';
 ?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <link rel="icon" href="/logo.svg" type="image/svg+xml">
+
+    <!-- SEO мета-теги -->
+    <meta name="keywords" content="детский сад Новосибирск, МАДОУ 154, дошкольное образование, запись в детский сад, ясли Новосибирск">
+    <meta name="author" content="МАДОУ детский сад №154">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="МАДОУ детский сад №154">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://f1276758.xsph.ru/">
+    <meta property="og:image" content="http://f1276758.xsph.ru/images/og-image.jpg">
+    <meta property="og:site_name" content="МАДОУ детский сад №154">
+    <meta property="og:locale" content="ru_RU">
+
     <meta name="description" content="Официальный сайт МАДОУ детский сад №154">
     <title>МАДОУ д/с №154 | Детский сад в Новосибирске</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,21 +78,113 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['send_message'])) {
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109724150', 'ym');
 
-    ym(109724150, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/109724150" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://f1276758.xsph.ru/">
+    
+    <!-- Alternate -->
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="http://f1276758.xsph.ru/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Schema.org разметка для организации -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Preschool",
+        "name": "МАДОУ детский сад №154",
+        "alternateName": "Детский сад №154 Новосибирск",
+        "description": "Муниципальное автономное дошкольное образовательное учреждение детский сад №154 в Новосибирске",
+        "url": "http://f1276758.xsph.ru/",
+        "logo": "http://f1276758.xsph.ru/images/logo.png",
+        "image": "http://f1276758.xsph.ru/images/kindergarten.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Новосибирск",
+            "streetAddress": "ул. Виктора Шевелёва, 17",
+            "addressCountry": "RU"
+        },
+        "telephone": "+7 (383) 382-91-54",
+        "email": "ds_154@edo54.ru",
+        "openingHours": "Mo-Fr 07:00-19:00",
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "07:00",
+            "closes": "19:00"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Возрастные группы",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "name": "Ясельная группа",
+                    "description": "Дети от 1.5 до 3 лет"
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Младшая группа",
+                    "description": "Дети от 3 до 4 лет"
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Средняя группа",
+                    "description": "Дети от 4 до 5 лет"
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Старшая группа",
+                    "description": "Дети от 5 до 6 лет"
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <!-- Schema.org BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Главная",
+            "item": "http://f1276758.xsph.ru/"
+        }]
+    }
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109724150', 'ym');
+
+        ym(109724150, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/109724150" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
 </head>
+
 <body>
+
+<div style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;" aria-hidden="true">
+    <h2>Детский сад №154 Новосибирск</h2>
+    <p>МАДОУ детский сад №154 - официальный сайт дошкольного образовательного учреждения в Новосибирске. Запись в детский сад, группы, ясли, подготовка к школе.</p>
+    <p>Адрес: г. Новосибирск, ул. Виктора Шевелёва, 17. Телефон: +7 (383) 382-91-54</p>
+</div>
 
 <header class="hero">
     <div class="container hero-content">
@@ -226,14 +340,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['send_message'])) {
                     <i class="fas fa-map-marker-alt"></i>
                     <div>
                         <h4>Адрес</h4>
-                        <p>г. Екатеринбург, ул. Детская, д. 15</p>
+                        <p>г. Новосибирск,  yл. Виктора Шевелёва, 17</p>
                     </div>
                 </div>
                 <div class="contact-card">
                     <i class="fas fa-phone-alt"></i>
                     <div>
                         <h4>Телефон</h4>
-                        <p>+7 (900) 000-00-00</p>
+                        <p>+7 (383) 382-91-54</p>
                         <p class="small">Приемная: пн-пт 8:00–17:00</p>
                     </div>
                 </div>
@@ -241,7 +355,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['send_message'])) {
                     <i class="fas fa-envelope"></i>
                     <div>
                         <h4>Email</h4>
-                        <p>sad154@edu.ekb.ru</p>
+                        <p>ds_154@edo54.ru</p>
                     </div>
                 </div>
                 <div class="contact-card">
@@ -328,5 +442,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['send_message'])) {
         });
     });
 </script>
+
+<div style="display: none;" aria-hidden="true">
+    детский сад Новосибирск, МАДОУ 154, ясли Новосибирск, запись в детский сад, дошкольное образование, подготовка к школе, детский сад на Шевелёва
+</div>
+
 </body>
 </html>

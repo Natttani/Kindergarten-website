@@ -5,12 +5,10 @@ Disallow: /kindergarten.db
 Disallow: /*.db$
 Disallow: /private/
 Disallow: /admin/
+Disallow: /admin.php
 
 # Задержка между запросами для щадящего сканирования
 Crawl-delay: 2
-
-# Главное зеркало сайта (укажите ваш реальный домен)
-Host: http://f1276758.xsph.ru/
 
 # Карта сайта
 Sitemap: http://f1276758.xsph.ru/sitemap.xml

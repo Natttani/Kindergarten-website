@@ -3,7 +3,6 @@
 $db_path = __DIR__ . '/kindergarten.db';
 $db = new SQLite3($db_path);
 
-// Создаём таблицу, если её нет
 $db->exec('
     CREATE TABLE IF NOT EXISTS messages (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -126,7 +125,7 @@ $page_keywords = 'детский сад Новосибирск, МАДОУ 154, 
                 {
                     "@type": "Offer",
                     "name": "Ясельная группа",
-                    "description": "Дети от 1.5 до 3 лет"
+                    "description": "Дети от 2 до 3 лет"
                 },
                 {
                     "@type": "Offer",
@@ -256,7 +255,7 @@ $page_keywords = 'детский сад Новосибирск, МАДОУ 154, 
             <div class="card">
                 <div class="card-icon"><i class="fas fa-baby-carriage"></i></div>
                 <h3>Ясельная группа</h3>
-                <p>Возраст: <strong>от 1,5 до 3 лет</strong></p>
+                <p>Возраст: <strong>от 2 до 3 лет</strong></p>
                 <p>Адаптация, развитие моторики, режим дня, первые шаги в общении.</p>
             </div>
             <div class="card">
@@ -409,10 +408,13 @@ $page_keywords = 'детский сад Новосибирск, МАДОУ 154, 
         </div>
     </div>
     <div class="footer-bottom">
-        <div class="container">
-            <p>© 2026 МАДОУ д/с №154. Все права защищены.</p>
-        </div>
+    <div class="container">
+        <p>© 2026 МАДОУ д/с №154. Все права защищены.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.75rem;">
+            <a href="admin.php" style="color: #9ca3af; text-decoration: none;">Админ-панель</a>
+        </p>
     </div>
+</div>
 </footer>
 
 <script>
